@@ -7,7 +7,7 @@ Individual Assignment - Muhammad Naim Khusyairi Bin Jaafar CDCS266 5A
 MUHAMMAD NAIM KHUSYAIRI BIN JAAFAR
 2024757865
 CDCS266 5A
-========================================================
+--------------------------------------------------------
 
   PROJECT OVERVIEW
 --------------------------------------------------------
