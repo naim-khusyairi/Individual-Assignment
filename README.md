@@ -1,7 +1,7 @@
 # Individual-Assignment
 Individual Assignment - Muhammad Naim Khusyairi Bin Jaafar CDCS266 5A
 
-========================================================
+
   SMART PETROL COST CALCULATOR (Individual Assignment)
   README
 MUHAMMAD NAIM KHUSYAIRI BIN JAAFAR
