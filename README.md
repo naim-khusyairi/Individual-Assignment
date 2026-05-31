@@ -53,7 +53,7 @@ government rebate scheme for eligible RON95 users.
    (wait for the home screen to fully load)
    OR connect a physical Android device via USB
    with USB Debugging enabled
-5. Click the Run (▶) button
+5. Click the Run button
 
   NOTE: Ensure the emulator is fully booted before
   running the app to avoid installation errors.
