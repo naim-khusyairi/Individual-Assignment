@@ -55,9 +55,6 @@ government rebate scheme for eligible RON95 users.
    with USB Debugging enabled
 5. Click the Run button
 
-  NOTE: Ensure the emulator is fully booted before
-  running the app to avoid installation errors.
-
   HOW TO USE THE APP
 --------------------------------------------------------
 1. Select your petrol type from the dropdown
