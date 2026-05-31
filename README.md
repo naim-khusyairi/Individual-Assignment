@@ -68,6 +68,5 @@ government rebate scheme for eligible RON95 users.
 5. Tap CALCULATE to view results
 6. Tap RESET to clear all fields and start again
 
-========================================================
+
   END OF README
-========================================================
