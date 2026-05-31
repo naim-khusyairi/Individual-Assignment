@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F8E9">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6A37BF"
+        android:elevation="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#9667E7"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⛽"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Smart Petrol Cost Calculator"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="with BUDI MADANI Rebate"
+                        android:textColor="#CCFFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Input Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="INPUT DETAILS"
+                        android:textColor="#6A37BF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Petrol Type" android:textStyle="bold" android:textColor="#212121"
+                        android:layout_marginBottom="6dp"/>
+                    <Spinner android:id="@+id/spinnerPetrolType"
+                        android:layout_width="match_parent" android:layout_height="48dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/spinner_bg" android:padding="8dp"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Petrol Price per Liter (RM)" android:textStyle="bold"
+                        android:textColor="#212121" android:layout_marginBottom="6dp"/>
+                    <EditText android:id="@+id/etPrice"
+                        android:layout_width="match_parent" android:layout_height="48dp"
+                        android:hint="e.g. 4.27" android:inputType="numberDecimal"
+                        android:background="@drawable/edittext_bg" android:padding="10dp"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Fuel Usage (Liters)" android:textStyle="bold"
+                        android:textColor="#212121" android:layout_marginBottom="6dp"/>
+                    <EditText android:id="@+id/etUsage"
+                        android:layout_width="match_parent" android:layout_height="48dp"
+                        android:hint="e.g. 40" android:inputType="numberDecimal"
+                        android:background="@drawable/edittext_bg" android:padding="10dp"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="BUDI MADANI Eligible?" android:textStyle="bold"
+                        android:textColor="#212121" android:layout_marginBottom="6dp"/>
+                    <RadioGroup android:id="@+id/rgBudi"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbYes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="#6A37BF"
+                            android:text="Yes"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="#6A37BF"
+                            android:text="No"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Buttons -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnCalculate"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#6A37BF"
+                    android:text="CALCULATE"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+                <Button android:id="@+id/btnReset"
+                    android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1"
+                    android:text="RESET" android:textStyle="bold"
+                    android:backgroundTint="#F57C00" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Results -->
+            <LinearLayout android:id="@+id/layoutResults"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp" app:cardElevation="4dp"
+                    app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="20dp">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="CALCULATION RESULTS" android:textSize="12sp"
+                            android:textStyle="bold" android:textColor="#6A37BF"
+                            android:layout_marginBottom="16dp"/>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:layout_marginBottom="10dp">
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:text="Total Petrol Cost"
+                                android:textSize="15sp" android:textColor="#212121"/>
+                            <TextView android:id="@+id/tvTotalCost"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="RM 0.00" android:textSize="15sp"
+                                android:textStyle="bold" android:textColor="#212121"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:background="#EEEEEE" android:layout_marginBottom="10dp"/>
+
+                        <LinearLayout android:id="@+id/rowRebate"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:layout_marginBottom="10dp"
+                            android:visibility="gone">
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:text="BUDI MADANI Rebate"
+                                android:textSize="15sp" android:textColor="#6A37BF"/>
+                            <TextView android:id="@+id/tvBudiRebate"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="RM 0.00" android:textSize="15sp"
+                                android:textStyle="bold" android:textColor="#6A37BF"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/rowSaving"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:layout_marginBottom="10dp"
+                            android:visibility="gone">
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:text="Total Payment Amount"
+                                android:textSize="15sp" android:textColor="#6A37BF"/>
+                            <TextView android:id="@+id/tvTotalSaving"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="RM 0.00" android:textSize="15sp"
+                                android:textStyle="bold" android:textColor="#6A37BF"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/rowFinal"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:background="#6A37BF"
+                            android:padding="14dp" android:visibility="gone">
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:text="Final Amount Payable"
+                                android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                            <TextView android:id="@+id/tvFinalPayable"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="RM 0.00" android:textSize="18sp"
+                                android:textStyle="bold" android:textColor="#FFFFFF"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
