@@ -5,7 +5,7 @@ MUHAMMAD NAIM KHUSYAIRI BIN JAAFAR
 CDCS266 5A 
 
   PROJECT OVERVIEW
---------------------------------------------------------
+-------------------------------------------------------- 
 Smart Petrol Cost Calculator is an Android mobile
 application that helps Malaysian users calculate their
 petrol expenses based on fuel type, price per litre,
