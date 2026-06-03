@@ -12,33 +12,6 @@ petrol expenses based on fuel type, price per litre,
 and fuel usage. It also supports the BUDI MADANI
 government rebate scheme for eligible RON95 users.
 
-  FEATURES
---------------------------------------------------------
-- Select petrol type: RON95, RON97, or Diesel
-- Enter petrol price per litre (RM)
-- Enter fuel usage in litres
-- BUDI MADANI rebate calculation (RON95 only)
-- Displays:
-    * Total Petrol Cost
-    * BUDI MADANI Rebate (if eligible)
-    * Total Payment Amount (after rebate)
-    * Final Amount Payable
-- Reset button to clear all inputs
-- About screen with app information
-- Clean, green-themed Material UI
-
-  BUDI MADANI REBATE LOGIC
---------------------------------------------------------
-- Applies ONLY to RON95 petrol type
-- Rebate rate: RM 1.99 per litre
-- Formula:
-    Total Cost       = Usage (L) x Price per Litre
-    BUDI Rebate      = Usage (L) x RM 1.99
-    Payment Amount   = Total Cost - BUDI Rebate
-- If user selects Yes but chooses RON97 or Diesel,
-  a toast message will notify that the rebate only
-  applies to RON95.
-
   HOW TO RUN
 --------------------------------------------------------
 1. Open Android Studio
